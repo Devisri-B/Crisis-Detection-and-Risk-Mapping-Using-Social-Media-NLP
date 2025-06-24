@@ -78,21 +78,15 @@ The pipeline includes:
 
 Each marker shows the **location** and the **assigned risk level**. Colors and clustering help explore high-concern areas easily.
 
-👉 [View Map](./crisis_marker_map.html)
+👉 [View Map](/images/crisis_marker_map.html)
 
-> Example:  
-> ![Marker Cluster Example](https://user-images.githubusercontent.com/placeholder/marker_map_sample.png) *(Replace with real image if desired)*
-
----
 
 ###  Heatmap — Visualizing Density of Concerned Posts
 
 The heatmap highlights the **volume of crisis-related posts** per region. Brighter areas represent more public concern or attention.
 
-👉 [View Heatmap](./crisis_locations_heatmap.html)
+👉 [View Heatmap](/images/crisis_locations_heatmap.html)
 
-> Example:  
-> ![Heatmap Example](https://user-images.githubusercontent.com/placeholder/heatmap_sample.png) *(Replace with real image if desired)*
 
 ---
 
