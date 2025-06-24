@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f9ff97f6e47c5c178132ae6960be41e9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f9ff97f6e47c5c178132ae6960be41e9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f9ff97f6e47c5c178132ae6960be41e9 = L.map(
+                "map_f9ff97f6e47c5c178132ae6960be41e9",
+                {
+                    center: [34.054151579999996, -60.062710432315086],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6a4d10cca4008d57df78e06d3b922ad7 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6a4d10cca4008d57df78e06d3b922ad7.addTo(map_f9ff97f6e47c5c178132ae6960be41e9);
+        
+    
+            var marker_cluster_8868a64304a3600e94a88cab82e389b6 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_6b6eaf3033c9b2227f1e2a1cef60bc80 = L.marker(
+                [43.6211955, -84.6824346],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_0f5b69ed236a4cb8534b391560d181fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4e9eed21d092e1b999281c57002394cf = $(`<div id="html_4e9eed21d092e1b999281c57002394cf" style="width: 100.0%; height: 100.0%;">Michigan<br>Risk Level: High Concern</div>`)[0];
+                popup_0f5b69ed236a4cb8534b391560d181fe.setContent(html_4e9eed21d092e1b999281c57002394cf);
+            
+        
+
+        marker_6b6eaf3033c9b2227f1e2a1cef60bc80.bindPopup(popup_0f5b69ed236a4cb8534b391560d181fe)
+        ;
+
+        
+    
+    
+            var marker_0aa2dea34bed11dce60bfc3311b7624d = L.marker(
+                [38.7251776, -105.607716],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_02b3215f58f8afb58ffa28cf947995b1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_31611a8022f4652bfef878fb6910516e = $(`<div id="html_31611a8022f4652bfef878fb6910516e" style="width: 100.0%; height: 100.0%;">Colorado<br>Risk Level: High Concern</div>`)[0];
+                popup_02b3215f58f8afb58ffa28cf947995b1.setContent(html_31611a8022f4652bfef878fb6910516e);
+            
+        
+
+        marker_0aa2dea34bed11dce60bfc3311b7624d.bindPopup(popup_02b3215f58f8afb58ffa28cf947995b1)
+        ;
+
+        
+    
+    
+            var marker_a0861482945b63e7d8ed1e2c8c8d9d98 = L.marker(
+                [51.1638175, 10.4478313],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_9fafd2b9892290c2ce5d16825b074d88 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ffceabaa91db24a62ef9ac7c20582d43 = $(`<div id="html_ffceabaa91db24a62ef9ac7c20582d43" style="width: 100.0%; height: 100.0%;">Germany<br>Risk Level: High Concern</div>`)[0];
+                popup_9fafd2b9892290c2ce5d16825b074d88.setContent(html_ffceabaa91db24a62ef9ac7c20582d43);
+            
+        
+
+        marker_a0861482945b63e7d8ed1e2c8c8d9d98.bindPopup(popup_9fafd2b9892290c2ce5d16825b074d88)
+        ;
+
+        
+    
+    
+            var marker_f6f02ce175243b5cfd7fb49ce4d51f70 = L.marker(
+                [41.8755616, -87.6244212],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_85089081f3275b555872a6ab8f062e2e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_89f6ea86cd8a4ad39b06a370f5fb3c3b = $(`<div id="html_89f6ea86cd8a4ad39b06a370f5fb3c3b" style="width: 100.0%; height: 100.0%;">Chicago<br>Risk Level: Moderate Concern</div>`)[0];
+                popup_85089081f3275b555872a6ab8f062e2e.setContent(html_89f6ea86cd8a4ad39b06a370f5fb3c3b);
+            
+        
+
+        marker_f6f02ce175243b5cfd7fb49ce4d51f70.bindPopup(popup_85089081f3275b555872a6ab8f062e2e)
+        ;
+
+        
+    
+    
+            var marker_7adf04497b3521e6a81feb541e3164c2 = L.marker(
+                [6.3110548, 20.5447525],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_69d1076955ffe36a5dfdd35f2c5e1258 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_80f8077bb5a07ee40deadd348dcb84c6 = $(`<div id="html_80f8077bb5a07ee40deadd348dcb84c6" style="width: 100.0%; height: 100.0%;">Uk<br>Risk Level: Moderate Concern</div>`)[0];
+                popup_69d1076955ffe36a5dfdd35f2c5e1258.setContent(html_80f8077bb5a07ee40deadd348dcb84c6);
+            
+        
+
+        marker_7adf04497b3521e6a81feb541e3164c2.bindPopup(popup_69d1076955ffe36a5dfdd35f2c5e1258)
+        ;
+
+        
+    
+    
+            var marker_b6571f43393a4e18a7af79b51096e8ab = L.marker(
+                [51.5074456, -0.1277653],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_86ba54a59f26509f94f9f034825093e3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_37571131c734047b71a5d78c4fb433dc = $(`<div id="html_37571131c734047b71a5d78c4fb433dc" style="width: 100.0%; height: 100.0%;">London<br>Risk Level: Moderate Concern</div>`)[0];
+                popup_86ba54a59f26509f94f9f034825093e3.setContent(html_37571131c734047b71a5d78c4fb433dc);
+            
+        
+
+        marker_b6571f43393a4e18a7af79b51096e8ab.bindPopup(popup_86ba54a59f26509f94f9f034825093e3)
+        ;
+
+        
+    
+    
+            var marker_e89afea25c1eda82427b72e11c1c7d6b = L.marker(
+                [34.2331373, -102.4107493],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_f355ae5ebdb5956490df12a97f84f5bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6d7c987506f0b8d15bd41a613c482df1 = $(`<div id="html_6d7c987506f0b8d15bd41a613c482df1" style="width: 100.0%; height: 100.0%;">Earth<br>Risk Level: High Concern</div>`)[0];
+                popup_f355ae5ebdb5956490df12a97f84f5bc.setContent(html_6d7c987506f0b8d15bd41a613c482df1);
+            
+        
+
+        marker_e89afea25c1eda82427b72e11c1c7d6b.bindPopup(popup_f355ae5ebdb5956490df12a97f84f5bc)
+        ;
+
+        
+    
+    
+            var marker_f4379cb2741bfa73a9dee3ba10a42998 = L.marker(
+                [36.7014631, -118.755997],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_d1be63a797fb5c91fd815ac4852f4a50 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_593f8bcc3dee51d7825ef25904a0a412 = $(`<div id="html_593f8bcc3dee51d7825ef25904a0a412" style="width: 100.0%; height: 100.0%;">California<br>Risk Level: High Concern</div>`)[0];
+                popup_d1be63a797fb5c91fd815ac4852f4a50.setContent(html_593f8bcc3dee51d7825ef25904a0a412);
+            
+        
+
+        marker_f4379cb2741bfa73a9dee3ba10a42998.bindPopup(popup_d1be63a797fb5c91fd815ac4852f4a50)
+        ;
+
+        
+    
+    
+            var marker_3898a79ad8002038dc379642f3b56c31 = L.marker(
+                [51.1638175, 10.4478313],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_37835794c4180d0aed6c0fc4a732599a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_527c093a44002a8f799cc6c4653aba3b = $(`<div id="html_527c093a44002a8f799cc6c4653aba3b" style="width: 100.0%; height: 100.0%;">Germany<br>Risk Level: High Concern</div>`)[0];
+                popup_37835794c4180d0aed6c0fc4a732599a.setContent(html_527c093a44002a8f799cc6c4653aba3b);
+            
+        
+
+        marker_3898a79ad8002038dc379642f3b56c31.bindPopup(popup_37835794c4180d0aed6c0fc4a732599a)
+        ;
+
+        
+    
+    
+            var marker_67529803803d5355d844deb737bac388 = L.marker(
+                [55.625578, 37.6063916],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_6250f781dbd8503ae78bd871a327e245 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_692ad3afb5eb826c5d6a6db58fc64802 = $(`<div id="html_692ad3afb5eb826c5d6a6db58fc64802" style="width: 100.0%; height: 100.0%;">Moscow<br>Risk Level: High Concern</div>`)[0];
+                popup_6250f781dbd8503ae78bd871a327e245.setContent(html_692ad3afb5eb826c5d6a6db58fc64802);
+            
+        
+
+        marker_67529803803d5355d844deb737bac388.bindPopup(popup_6250f781dbd8503ae78bd871a327e245)
+        ;
+
+        
+    
+    
+            var marker_2fdae564b0b12eeb697758a9900398c2 = L.marker(
+                [-28.8166236, 24.991639],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_eed8ab452781d75237114d9be9afb743 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9ddf9ff0c8566fe78bd99f9f9199cddc = $(`<div id="html_9ddf9ff0c8566fe78bd99f9f9199cddc" style="width: 100.0%; height: 100.0%;">South Africa<br>Risk Level: Moderate Concern</div>`)[0];
+                popup_eed8ab452781d75237114d9be9afb743.setContent(html_9ddf9ff0c8566fe78bd99f9f9199cddc);
+            
+        
+
+        marker_2fdae564b0b12eeb697758a9900398c2.bindPopup(popup_eed8ab452781d75237114d9be9afb743)
+        ;
+
+        
+    
+    
+            var marker_ff352e1569d15a73d0e5e1ad711804c4 = L.marker(
+                [39.7837304, -100.445882],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_b0895e13669cdf1a0a7be3df235d6471 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c509c05f355a9a9697a8872aecca66c9 = $(`<div id="html_c509c05f355a9a9697a8872aecca66c9" style="width: 100.0%; height: 100.0%;">America<br>Risk Level: High Concern</div>`)[0];
+                popup_b0895e13669cdf1a0a7be3df235d6471.setContent(html_c509c05f355a9a9697a8872aecca66c9);
+            
+        
+
+        marker_ff352e1569d15a73d0e5e1ad711804c4.bindPopup(popup_b0895e13669cdf1a0a7be3df235d6471)
+        ;
+
+        
+    
+    
+            var marker_beaaf49393b75f04a26e04c178752542 = L.marker(
+                [27.7567667, -81.4639835],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_6f6fade5acb4ccd3384d4377daefcdc7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef9db5517337f816a3da9bb68adc8081 = $(`<div id="html_ef9db5517337f816a3da9bb68adc8081" style="width: 100.0%; height: 100.0%;">Florida<br>Risk Level: High Concern</div>`)[0];
+                popup_6f6fade5acb4ccd3384d4377daefcdc7.setContent(html_ef9db5517337f816a3da9bb68adc8081);
+            
+        
+
+        marker_beaaf49393b75f04a26e04c178752542.bindPopup(popup_6f6fade5acb4ccd3384d4377daefcdc7)
+        ;
+
+        
+    
+    
+            var marker_d51a33d1b2b81a4c6ce0765fd2b52da0 = L.marker(
+                [39.3260685, -4.8379791],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_9ee3d1b8cf70127beffb0b2dacb76b4e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b2a4abc3b48265e3143c41f382d910b2 = $(`<div id="html_b2a4abc3b48265e3143c41f382d910b2" style="width: 100.0%; height: 100.0%;">Spain<br>Risk Level: Moderate Concern</div>`)[0];
+                popup_9ee3d1b8cf70127beffb0b2dacb76b4e.setContent(html_b2a4abc3b48265e3143c41f382d910b2);
+            
+        
+
+        marker_d51a33d1b2b81a4c6ce0765fd2b52da0.bindPopup(popup_9ee3d1b8cf70127beffb0b2dacb76b4e)
+        ;
+
+        
+    
+    
+            var marker_676a3dce6bbe3baaf60f731bcb008e9e = L.marker(
+                [39.3260685, -4.8379791],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_8f5a9fb6467380a8d1c1b7ddf7cfdff9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_61ffdd1ddcecf0f0d3bde18e232daff6 = $(`<div id="html_61ffdd1ddcecf0f0d3bde18e232daff6" style="width: 100.0%; height: 100.0%;">Spain<br>Risk Level: Moderate Concern</div>`)[0];
+                popup_8f5a9fb6467380a8d1c1b7ddf7cfdff9.setContent(html_61ffdd1ddcecf0f0d3bde18e232daff6);
+            
+        
+
+        marker_676a3dce6bbe3baaf60f731bcb008e9e.bindPopup(popup_8f5a9fb6467380a8d1c1b7ddf7cfdff9)
+        ;
+
+        
+    
+    
+            var marker_db0ec7aaabf6ffd7287c24253996ca12 = L.marker(
+                [42.3315509, -83.0466403],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_08766099583a0a30c082533297dc4066 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a59a70ffc137c1c7f2a1955204804f4b = $(`<div id="html_a59a70ffc137c1c7f2a1955204804f4b" style="width: 100.0%; height: 100.0%;">Detroit<br>Risk Level: Moderate Concern</div>`)[0];
+                popup_08766099583a0a30c082533297dc4066.setContent(html_a59a70ffc137c1c7f2a1955204804f4b);
+            
+        
+
+        marker_db0ec7aaabf6ffd7287c24253996ca12.bindPopup(popup_08766099583a0a30c082533297dc4066)
+        ;
+
+        
+    
+    
+            var marker_b79fedf72f7045df7e11aafa42202059 = L.marker(
+                [23.6585116, -102.0077097],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_bdc89806ee531a4e731e921588453d2b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7c8ab41a6789df5b678b1e1faf094e77 = $(`<div id="html_7c8ab41a6789df5b678b1e1faf094e77" style="width: 100.0%; height: 100.0%;">Mexico<br>Risk Level: Moderate Concern</div>`)[0];
+                popup_bdc89806ee531a4e731e921588453d2b.setContent(html_7c8ab41a6789df5b678b1e1faf094e77);
+            
+        
+
+        marker_b79fedf72f7045df7e11aafa42202059.bindPopup(popup_bdc89806ee531a4e731e921588453d2b)
+        ;
+
+        
+    
+    
+            var marker_b5888a7bf7289e0c1e96bafdd67d0bda = L.marker(
+                [23.6585116, -102.0077097],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_e196a3e750741fd4e8d9211a355a08bb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cdeaa41c6258b9e22810cfedb022761f = $(`<div id="html_cdeaa41c6258b9e22810cfedb022761f" style="width: 100.0%; height: 100.0%;">Mexico<br>Risk Level: Moderate Concern</div>`)[0];
+                popup_e196a3e750741fd4e8d9211a355a08bb.setContent(html_cdeaa41c6258b9e22810cfedb022761f);
+            
+        
+
+        marker_b5888a7bf7289e0c1e96bafdd67d0bda.bindPopup(popup_e196a3e750741fd4e8d9211a355a08bb)
+        ;
+
+        
+    
+    
+            var marker_b05a7a1f62ba739bea92ee6290ab4faf = L.marker(
+                [39.7837304, -100.445882],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_cc9340edcab426f7e9d9a1764f25303c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6acb87959bec17ec1b6d3a5ffcb2795d = $(`<div id="html_6acb87959bec17ec1b6d3a5ffcb2795d" style="width: 100.0%; height: 100.0%;">United States<br>Risk Level: Moderate Concern</div>`)[0];
+                popup_cc9340edcab426f7e9d9a1764f25303c.setContent(html_6acb87959bec17ec1b6d3a5ffcb2795d);
+            
+        
+
+        marker_b05a7a1f62ba739bea92ee6290ab4faf.bindPopup(popup_cc9340edcab426f7e9d9a1764f25303c)
+        ;
+
+        
+    
+    
+            var marker_52eb708055df89d25e83a47a69e0c82d = L.marker(
+                [39.7837304, -100.445882],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_e5368d3f2125c7b9b427c6b66be82afb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3be383aa2a709e85e70e5633d483d13e = $(`<div id="html_3be383aa2a709e85e70e5633d483d13e" style="width: 100.0%; height: 100.0%;">Us<br>Risk Level: High Concern</div>`)[0];
+                popup_e5368d3f2125c7b9b427c6b66be82afb.setContent(html_3be383aa2a709e85e70e5633d483d13e);
+            
+        
+
+        marker_52eb708055df89d25e83a47a69e0c82d.bindPopup(popup_e5368d3f2125c7b9b427c6b66be82afb)
+        ;
+
+        
+    
+    
+            var marker_9fcaa9193cc411a63cc6a2f06d8d2fa1 = L.marker(
+                [37.1232245, -78.4927721],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_f7eaeb66d36b7b6b30969578ff438006 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c6c38be06a7146b41b3c3f2a0c07472a = $(`<div id="html_c6c38be06a7146b41b3c3f2a0c07472a" style="width: 100.0%; height: 100.0%;">Virginia<br>Risk Level: High Concern</div>`)[0];
+                popup_f7eaeb66d36b7b6b30969578ff438006.setContent(html_c6c38be06a7146b41b3c3f2a0c07472a);
+            
+        
+
+        marker_9fcaa9193cc411a63cc6a2f06d8d2fa1.bindPopup(popup_f7eaeb66d36b7b6b30969578ff438006)
+        ;
+
+        
+    
+    
+            var marker_e50ebf93b780eef869fd0252f4e2e33b = L.marker(
+                [36.7014631, -118.755997],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_18a024f0a2f16c86a68304c41c8df73a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_533c44c72aeeb8046e88e03059e054aa = $(`<div id="html_533c44c72aeeb8046e88e03059e054aa" style="width: 100.0%; height: 100.0%;">California<br>Risk Level: High Concern</div>`)[0];
+                popup_18a024f0a2f16c86a68304c41c8df73a.setContent(html_533c44c72aeeb8046e88e03059e054aa);
+            
+        
+
+        marker_e50ebf93b780eef869fd0252f4e2e33b.bindPopup(popup_18a024f0a2f16c86a68304c41c8df73a)
+        ;
+
+        
+    
+    
+            var marker_441746dcad38ff56aaea5803d5028daa = L.marker(
+                [38.0211468, -1.0540357938483014],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_2a6801bd8c27d435495c480b5ff34bb6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_775efcf576ebac56c7a8f4060e52e385 = $(`<div id="html_775efcf576ebac56c7a8f4060e52e385" style="width: 100.0%; height: 100.0%;">Santa Cruz Area<br>Risk Level: High Concern</div>`)[0];
+                popup_2a6801bd8c27d435495c480b5ff34bb6.setContent(html_775efcf576ebac56c7a8f4060e52e385);
+            
+        
+
+        marker_441746dcad38ff56aaea5803d5028daa.bindPopup(popup_2a6801bd8c27d435495c480b5ff34bb6)
+        ;
+
+        
+    
+    
+            var marker_a2fd0aff1878d527dc75ed7b19b25c74 = L.marker(
+                [36.7014631, -118.755997],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_af23af0d0e3652963d305e7a84a57a57 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c01d4372e8524912d82b8257f5c90319 = $(`<div id="html_c01d4372e8524912d82b8257f5c90319" style="width: 100.0%; height: 100.0%;">California<br>Risk Level: High Concern</div>`)[0];
+                popup_af23af0d0e3652963d305e7a84a57a57.setContent(html_c01d4372e8524912d82b8257f5c90319);
+            
+        
+
+        marker_a2fd0aff1878d527dc75ed7b19b25c74.bindPopup(popup_af23af0d0e3652963d305e7a84a57a57)
+        ;
+
+        
+    
+    
+            var marker_f06c14cc2c120b00235bd93ccda29146 = L.marker(
+                [39.7837304, -100.445882],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_f0ecc13a211394afbffe8bb927cd8e7e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bf7502ffa87bdbf6d0747449ea041a91 = $(`<div id="html_bf7502ffa87bdbf6d0747449ea041a91" style="width: 100.0%; height: 100.0%;">Us<br>Risk Level: High Concern</div>`)[0];
+                popup_f0ecc13a211394afbffe8bb927cd8e7e.setContent(html_bf7502ffa87bdbf6d0747449ea041a91);
+            
+        
+
+        marker_f06c14cc2c120b00235bd93ccda29146.bindPopup(popup_f0ecc13a211394afbffe8bb927cd8e7e)
+        ;
+
+        
+    
+    
+            var marker_0ba2ba7dc5c6e898fcbf76a9febe9ac7 = L.marker(
+                [35.6729639, -79.0392919],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_88db8182ba75bd29bf9b61f54fbd2620 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f63d38d0b15f26bae0f73f178dd8fb82 = $(`<div id="html_f63d38d0b15f26bae0f73f178dd8fb82" style="width: 100.0%; height: 100.0%;">North Carolina<br>Risk Level: High Concern</div>`)[0];
+                popup_88db8182ba75bd29bf9b61f54fbd2620.setContent(html_f63d38d0b15f26bae0f73f178dd8fb82);
+            
+        
+
+        marker_0ba2ba7dc5c6e898fcbf76a9febe9ac7.bindPopup(popup_88db8182ba75bd29bf9b61f54fbd2620)
+        ;
+
+        
+    
+    
+            var marker_a49320075e43e8875e3f66d4abdb5c8f = L.marker(
+                [37.8044557, -122.271356],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_acfee0b5244b38c2dbcae736ef4f9b05 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_09e8d9657fb0616856ceeb1f846b990a = $(`<div id="html_09e8d9657fb0616856ceeb1f846b990a" style="width: 100.0%; height: 100.0%;">Oakland<br>Risk Level: High Concern</div>`)[0];
+                popup_acfee0b5244b38c2dbcae736ef4f9b05.setContent(html_09e8d9657fb0616856ceeb1f846b990a);
+            
+        
+
+        marker_a49320075e43e8875e3f66d4abdb5c8f.bindPopup(popup_acfee0b5244b38c2dbcae736ef4f9b05)
+        ;
+
+        
+    
+    
+            var marker_e368005129b86630462c6910b1e888d5 = L.marker(
+                [36.7014631, -118.755997],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_3ab84c66670ba6f66773e1ea41bf64b1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_79e74774625567384179642099a26712 = $(`<div id="html_79e74774625567384179642099a26712" style="width: 100.0%; height: 100.0%;">California<br>Risk Level: High Concern</div>`)[0];
+                popup_3ab84c66670ba6f66773e1ea41bf64b1.setContent(html_79e74774625567384179642099a26712);
+            
+        
+
+        marker_e368005129b86630462c6910b1e888d5.bindPopup(popup_3ab84c66670ba6f66773e1ea41bf64b1)
+        ;
+
+        
+    
+    
+            var marker_1a90f6859f215162e346ab569bdb6d11 = L.marker(
+                [37.8044557, -122.271356],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_605bf65058ab1ef2b7ef626fa25753a6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d4ec96c49fe03c5324a77227b5b97061 = $(`<div id="html_d4ec96c49fe03c5324a77227b5b97061" style="width: 100.0%; height: 100.0%;">Oakland<br>Risk Level: High Concern</div>`)[0];
+                popup_605bf65058ab1ef2b7ef626fa25753a6.setContent(html_d4ec96c49fe03c5324a77227b5b97061);
+            
+        
+
+        marker_1a90f6859f215162e346ab569bdb6d11.bindPopup(popup_605bf65058ab1ef2b7ef626fa25753a6)
+        ;
+
+        
+    
+    
+            var marker_ffc3edbae92538f11025c58e5f55ef49 = L.marker(
+                [37.1232245, -78.4927721],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_0d6aed26f0e6b56338310a77ebc817a7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_11e65e735ea7f02dbb51ada7b70c6768 = $(`<div id="html_11e65e735ea7f02dbb51ada7b70c6768" style="width: 100.0%; height: 100.0%;">Virginia<br>Risk Level: High Concern</div>`)[0];
+                popup_0d6aed26f0e6b56338310a77ebc817a7.setContent(html_11e65e735ea7f02dbb51ada7b70c6768);
+            
+        
+
+        marker_ffc3edbae92538f11025c58e5f55ef49.bindPopup(popup_0d6aed26f0e6b56338310a77ebc817a7)
+        ;
+
+        
+    
+    
+            var marker_c52cf611260bc15d6282ae47e2335990 = L.marker(
+                [-42.5638896, 171.45233400435404],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_d88455e3c3f0c543c0856a00dc72b546 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_09ba8d6effa608b68aeb3a408b871f94 = $(`<div id="html_09ba8d6effa608b68aeb3a408b871f94" style="width: 100.0%; height: 100.0%;">West Coast<br>Risk Level: High Concern</div>`)[0];
+                popup_d88455e3c3f0c543c0856a00dc72b546.setContent(html_09ba8d6effa608b68aeb3a408b871f94);
+            
+        
+
+        marker_c52cf611260bc15d6282ae47e2335990.bindPopup(popup_d88455e3c3f0c543c0856a00dc72b546)
+        ;
+
+        
+    
+    
+            var marker_5d8237132c785fcc7762f8dd473a9c59 = L.marker(
+                [-24.7761086, 134.755],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_065ddb0042867b38fbf3ff2b80e7799e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c7e84202ef53bbb518ca602e40937507 = $(`<div id="html_c7e84202ef53bbb518ca602e40937507" style="width: 100.0%; height: 100.0%;">Australia<br>Risk Level: Moderate Concern</div>`)[0];
+                popup_065ddb0042867b38fbf3ff2b80e7799e.setContent(html_c7e84202ef53bbb518ca602e40937507);
+            
+        
+
+        marker_5d8237132c785fcc7762f8dd473a9c59.bindPopup(popup_065ddb0042867b38fbf3ff2b80e7799e)
+        ;
+
+        
+    
+    
+            var marker_5ddc55a4269fb017131e5a7d3289a743 = L.marker(
+                [36.2533896, -115.2794366262601],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_558d5564dcf73a03b1ed6b8b42a28a12 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3fe1e1717a605e007c6bfb94d1ebff21 = $(`<div id="html_3fe1e1717a605e007c6bfb94d1ebff21" style="width: 100.0%; height: 100.0%;">Las Vegas<br>Risk Level: Moderate Concern</div>`)[0];
+                popup_558d5564dcf73a03b1ed6b8b42a28a12.setContent(html_3fe1e1717a605e007c6bfb94d1ebff21);
+            
+        
+
+        marker_5ddc55a4269fb017131e5a7d3289a743.bindPopup(popup_558d5564dcf73a03b1ed6b8b42a28a12)
+        ;
+
+        
+    
+    
+            var marker_82434d694459ff5f87caef0dc2c30fea = L.marker(
+                [39.7392364, -104.984862],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_5fc97d70389b6a7b4eff0535660b19d4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_49b0d1a85c7a0f39c2fb8ccdc8eb6571 = $(`<div id="html_49b0d1a85c7a0f39c2fb8ccdc8eb6571" style="width: 100.0%; height: 100.0%;">Denver<br>Risk Level: Moderate Concern</div>`)[0];
+                popup_5fc97d70389b6a7b4eff0535660b19d4.setContent(html_49b0d1a85c7a0f39c2fb8ccdc8eb6571);
+            
+        
+
+        marker_82434d694459ff5f87caef0dc2c30fea.bindPopup(popup_5fc97d70389b6a7b4eff0535660b19d4)
+        ;
+
+        
+    
+    
+            var marker_ac932b8ac1f8ea89992d27a1443e95c4 = L.marker(
+                [38.7251776, -105.607716],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_754041688abb48a0ba1604ee567d87ce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7844df5f16ab91991b0268b98d9e9a76 = $(`<div id="html_7844df5f16ab91991b0268b98d9e9a76" style="width: 100.0%; height: 100.0%;">Colorado<br>Risk Level: Moderate Concern</div>`)[0];
+                popup_754041688abb48a0ba1604ee567d87ce.setContent(html_7844df5f16ab91991b0268b98d9e9a76);
+            
+        
+
+        marker_ac932b8ac1f8ea89992d27a1443e95c4.bindPopup(popup_754041688abb48a0ba1604ee567d87ce)
+        ;
+
+        
+    
+    
+            var marker_e6fe23668fd53ef4b23b39905dae41eb = L.marker(
+                [38.7251776, -105.607716],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_30f3c6d2d5aa7d7b88f238bb35d7bddb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b8223402e2c8245a96be70a826d984fb = $(`<div id="html_b8223402e2c8245a96be70a826d984fb" style="width: 100.0%; height: 100.0%;">Colorado<br>Risk Level: Moderate Concern</div>`)[0];
+                popup_30f3c6d2d5aa7d7b88f238bb35d7bddb.setContent(html_b8223402e2c8245a96be70a826d984fb);
+            
+        
+
+        marker_e6fe23668fd53ef4b23b39905dae41eb.bindPopup(popup_30f3c6d2d5aa7d7b88f238bb35d7bddb)
+        ;
+
+        
+    
+    
+            var marker_93d138543e8f7e8e15fab053e2ced93c = L.marker(
+                [39.7837304, -100.445882],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_2c1d64419ba9dec699239013ca9e5d98 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0d233f5cabc8144f13e3ff7a425539ec = $(`<div id="html_0d233f5cabc8144f13e3ff7a425539ec" style="width: 100.0%; height: 100.0%;">Us<br>Risk Level: High Concern</div>`)[0];
+                popup_2c1d64419ba9dec699239013ca9e5d98.setContent(html_0d233f5cabc8144f13e3ff7a425539ec);
+            
+        
+
+        marker_93d138543e8f7e8e15fab053e2ced93c.bindPopup(popup_2c1d64419ba9dec699239013ca9e5d98)
+        ;
+
+        
+    
+    
+            var marker_f43f85f4968e583a593413ff48df2cef = L.marker(
+                [36.7014631, -118.755997],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_b52ee9b2ef48608929e069f24b5c14a3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4792d070d22df6f62ff639b2e95a04fa = $(`<div id="html_4792d070d22df6f62ff639b2e95a04fa" style="width: 100.0%; height: 100.0%;">California<br>Risk Level: High Concern</div>`)[0];
+                popup_b52ee9b2ef48608929e069f24b5c14a3.setContent(html_4792d070d22df6f62ff639b2e95a04fa);
+            
+        
+
+        marker_f43f85f4968e583a593413ff48df2cef.bindPopup(popup_b52ee9b2ef48608929e069f24b5c14a3)
+        ;
+
+        
+    
+    
+            var marker_0d153966d08ebc1eec26985f42ea0fb8 = L.marker(
+                [39.7837304, -100.445882],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_44212c6d7a39869ab0ec46a1961a4776 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2fdd36ac136712eefe2549620a27da29 = $(`<div id="html_2fdd36ac136712eefe2549620a27da29" style="width: 100.0%; height: 100.0%;">Us<br>Risk Level: High Concern</div>`)[0];
+                popup_44212c6d7a39869ab0ec46a1961a4776.setContent(html_2fdd36ac136712eefe2549620a27da29);
+            
+        
+
+        marker_0d153966d08ebc1eec26985f42ea0fb8.bindPopup(popup_44212c6d7a39869ab0ec46a1961a4776)
+        ;
+
+        
+    
+    
+            var marker_a033b0f9a8b049069ff32cac6949f025 = L.marker(
+                [38.8950368, -77.0365427],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_45334941d649ac209980b25788a1c8a6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_52f0c32506ef61be7cc5e0c9c81edbd1 = $(`<div id="html_52f0c32506ef61be7cc5e0c9c81edbd1" style="width: 100.0%; height: 100.0%;">Washington<br>Risk Level: Moderate Concern</div>`)[0];
+                popup_45334941d649ac209980b25788a1c8a6.setContent(html_52f0c32506ef61be7cc5e0c9c81edbd1);
+            
+        
+
+        marker_a033b0f9a8b049069ff32cac6949f025.bindPopup(popup_45334941d649ac209980b25788a1c8a6)
+        ;
+
+        
+    
+    
+            var marker_5646287ddf3c8bc6007c33e4c0ec8c6c = L.marker(
+                [61.0666922, -107.991707],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_fc9af2a6ff91d02cbcee45b0a4d75046 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c72fbc2b8e2cf4e2a0874307b3f4047 = $(`<div id="html_3c72fbc2b8e2cf4e2a0874307b3f4047" style="width: 100.0%; height: 100.0%;">Canada<br>Risk Level: High Concern</div>`)[0];
+                popup_fc9af2a6ff91d02cbcee45b0a4d75046.setContent(html_3c72fbc2b8e2cf4e2a0874307b3f4047);
+            
+        
+
+        marker_5646287ddf3c8bc6007c33e4c0ec8c6c.bindPopup(popup_fc9af2a6ff91d02cbcee45b0a4d75046)
+        ;
+
+        
+    
+    
+            var marker_ad0310edfb93fe1cb9f9ed0edf8c6ec7 = L.marker(
+                [38.7604815, -92.5617875],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_404a378ff5dcc0a1fe71644b6d02baca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b072e35529ad3ffe69b7905bf1566ceb = $(`<div id="html_b072e35529ad3ffe69b7905bf1566ceb" style="width: 100.0%; height: 100.0%;">Missouri<br>Risk Level: Moderate Concern</div>`)[0];
+                popup_404a378ff5dcc0a1fe71644b6d02baca.setContent(html_b072e35529ad3ffe69b7905bf1566ceb);
+            
+        
+
+        marker_ad0310edfb93fe1cb9f9ed0edf8c6ec7.bindPopup(popup_404a378ff5dcc0a1fe71644b6d02baca)
+        ;
+
+        
+    
+    
+            var marker_dec39807544f87cebec0b698c4b71c8b = L.marker(
+                [32.7174202, -117.162772],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_c43ee303a8ecd8c3629b5dcf40bb16ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a81550cbebfb54c351be9c72f21e6efc = $(`<div id="html_a81550cbebfb54c351be9c72f21e6efc" style="width: 100.0%; height: 100.0%;">San Diego<br>Risk Level: High Concern</div>`)[0];
+                popup_c43ee303a8ecd8c3629b5dcf40bb16ef.setContent(html_a81550cbebfb54c351be9c72f21e6efc);
+            
+        
+
+        marker_dec39807544f87cebec0b698c4b71c8b.bindPopup(popup_c43ee303a8ecd8c3629b5dcf40bb16ef)
+        ;
+
+        
+    
+    
+            var marker_beca85038e609910b6b9212ca69ca19e = L.marker(
+                [22.3511148, 78.6677428],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_093dbeee45b0be9a6fc68f726c404dc0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_09a02f388806d36603699cb5ada82109 = $(`<div id="html_09a02f388806d36603699cb5ada82109" style="width: 100.0%; height: 100.0%;">India<br>Risk Level: Moderate Concern</div>`)[0];
+                popup_093dbeee45b0be9a6fc68f726c404dc0.setContent(html_09a02f388806d36603699cb5ada82109);
+            
+        
+
+        marker_beca85038e609910b6b9212ca69ca19e.bindPopup(popup_093dbeee45b0be9a6fc68f726c404dc0)
+        ;
+
+        
+    
+    
+            var marker_0423679a2d55d5e7f2b53ebb37f3225e = L.marker(
+                [22.350627, 114.1849161],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_bf415dd526ac6b88c560af194e394ef8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_148f71271dad7cf11ccb011f79ddb59d = $(`<div id="html_148f71271dad7cf11ccb011f79ddb59d" style="width: 100.0%; height: 100.0%;">Hong Kong<br>Risk Level: Moderate Concern</div>`)[0];
+                popup_bf415dd526ac6b88c560af194e394ef8.setContent(html_148f71271dad7cf11ccb011f79ddb59d);
+            
+        
+
+        marker_0423679a2d55d5e7f2b53ebb37f3225e.bindPopup(popup_bf415dd526ac6b88c560af194e394ef8)
+        ;
+
+        
+    
+    
+            var marker_253e519117890118cabf12ae8fdfdb6c = L.marker(
+                [52.2434979, 5.6343227],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_0a978c1f453f49ac4af8a0f046d8d636 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3e4c7b14474377ee487cda665b006ebc = $(`<div id="html_3e4c7b14474377ee487cda665b006ebc" style="width: 100.0%; height: 100.0%;">Netherlands<br>Risk Level: Moderate Concern</div>`)[0];
+                popup_0a978c1f453f49ac4af8a0f046d8d636.setContent(html_3e4c7b14474377ee487cda665b006ebc);
+            
+        
+
+        marker_253e519117890118cabf12ae8fdfdb6c.bindPopup(popup_0a978c1f453f49ac4af8a0f046d8d636)
+        ;
+
+        
+    
+    
+            var marker_1c2d79a361dc6b0a132b742aca93537f = L.marker(
+                [39.7837304, -100.445882],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_8b3dd12d4e3af3111b6e61682ee435bd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_481bec5480cedaf7e007c6636ba7f06b = $(`<div id="html_481bec5480cedaf7e007c6636ba7f06b" style="width: 100.0%; height: 100.0%;">Us<br>Risk Level: Moderate Concern</div>`)[0];
+                popup_8b3dd12d4e3af3111b6e61682ee435bd.setContent(html_481bec5480cedaf7e007c6636ba7f06b);
+            
+        
+
+        marker_1c2d79a361dc6b0a132b742aca93537f.bindPopup(popup_8b3dd12d4e3af3111b6e61682ee435bd)
+        ;
+
+        
+    
+    
+            var marker_f3584c9f675af85497af5eea2c1bd9e0 = L.marker(
+                [40.7127281, -74.0060152],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_8be191a85318a8091e4aa999944c2895 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_65bc7af8de14c5ddf13170a6ce95b342 = $(`<div id="html_65bc7af8de14c5ddf13170a6ce95b342" style="width: 100.0%; height: 100.0%;">New York City<br>Risk Level: High Concern</div>`)[0];
+                popup_8be191a85318a8091e4aa999944c2895.setContent(html_65bc7af8de14c5ddf13170a6ce95b342);
+            
+        
+
+        marker_f3584c9f675af85497af5eea2c1bd9e0.bindPopup(popup_8be191a85318a8091e4aa999944c2895)
+        ;
+
+        
+    
+    
+            var marker_8fce7b98bb9ced26ca1f60dc6b7a7e98 = L.marker(
+                [40.7127281, -74.0060152],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_c7129d980d94046e0957547a2c530534 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a8efe97ac0250b2cdc7eb001e9f6b3f6 = $(`<div id="html_a8efe97ac0250b2cdc7eb001e9f6b3f6" style="width: 100.0%; height: 100.0%;">New York<br>Risk Level: High Concern</div>`)[0];
+                popup_c7129d980d94046e0957547a2c530534.setContent(html_a8efe97ac0250b2cdc7eb001e9f6b3f6);
+            
+        
+
+        marker_8fce7b98bb9ced26ca1f60dc6b7a7e98.bindPopup(popup_c7129d980d94046e0957547a2c530534)
+        ;
+
+        
+    
+    
+            var marker_f4603a6d025a94cc24a05b46ed78d84f = L.marker(
+                [39.7837304, -100.445882],
+                {
+}
+            ).addTo(marker_cluster_8868a64304a3600e94a88cab82e389b6);
+        
+    
+        var popup_8a20ea6abdb2eb759a4345d79380d5d9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e5ad1739cf6223c1ada93d55770e3ce5 = $(`<div id="html_e5ad1739cf6223c1ada93d55770e3ce5" style="width: 100.0%; height: 100.0%;">Us<br>Risk Level: High Concern</div>`)[0];
+                popup_8a20ea6abdb2eb759a4345d79380d5d9.setContent(html_e5ad1739cf6223c1ada93d55770e3ce5);
+            
+        
+
+        marker_f4603a6d025a94cc24a05b46ed78d84f.bindPopup(popup_8a20ea6abdb2eb759a4345d79380d5d9)
+        ;
+
+        
+    
+    
+            marker_cluster_8868a64304a3600e94a88cab82e389b6.addTo(map_f9ff97f6e47c5c178132ae6960be41e9);
+        
+</script>
+</html>
